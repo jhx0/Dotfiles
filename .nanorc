@@ -1,0 +1,6 @@
+set tabsize 4
+set tabstospaces
+set nohelp
+set nowrap
+set constantshow
+set regexp
