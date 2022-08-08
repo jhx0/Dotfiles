@@ -16,8 +16,6 @@ set -o emacs  # Set Emacs mode
 export EDITOR=vim
 export PAGER=less
 export VISUAL=vim
-# if bat is installed
-#export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANPAGER="less"
 export BROWSER=firefox
 export TZ='Europe/Berlin'
