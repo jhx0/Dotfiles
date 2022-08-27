@@ -1,3 +1,4 @@
 refresh-on-startup yes
+auto-reload yes
 reload-time 60
-browser "/home/x/Downloads/firefox-104.0/firefox/firefox-bin %u"
+browser "/usr/local/bin/firefox-bin %u"
