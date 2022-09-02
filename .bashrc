@@ -104,3 +104,5 @@ alias gitpu='git pull'
 alias apts='apt search'
 alias apti='sudo apt install'
 alias aptu='sudo apt update && sudo apt upgrade'
+
+source $HOME/.bash_greetings
