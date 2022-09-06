@@ -23,7 +23,7 @@ export GREP_COLOR='1;31'
 #export GOPATH="$HOME/go"
 #export GOROOT="$HOME/bin/go"
 export LANG=en_US.UTF-8
-export DOTFILES="~/.dotfiles"
+export DOTFILES="~/Dotfiles"
 
 # LESS man page colors (makes Man pages more readable).
 export LESS_TERMCAP_mb=$'\E[01;31m'
