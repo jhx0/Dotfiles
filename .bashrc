@@ -90,7 +90,6 @@ alias cp='cp -v'
 alias mv='mv -v'
 alias sl=ls
 alias mx='chmod u+x'
-alias php-srv='php -S localhost:8000'
 alias lx='exa -la'
 alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
 
@@ -99,10 +98,5 @@ alias gits='git status'
 alias gitc='git commit -m'
 alias gitp='git push'
 alias gitpu='git pull'
-
-# apt
-alias apts='apt search'
-alias apti='sudo apt install'
-alias aptu='sudo apt update && sudo apt upgrade'
 
 source $HOME/.bash_greetings
