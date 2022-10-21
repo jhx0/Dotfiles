@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PATH="$PATH:$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/games"
+
+dmenu_run -b
