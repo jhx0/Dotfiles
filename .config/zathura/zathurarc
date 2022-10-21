@@ -1,2 +1,3 @@
-set recolor true
-set recolor-reverse-video true
+# Reverse color?
+#set recolor true
+#set recolor-reverse-video true
