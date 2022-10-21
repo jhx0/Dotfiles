@@ -70,7 +70,7 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
    . /usr/share/bash-completion/bash_completion
 fi
 
-export PS1="\[\033[01;91m\]\h\[\033[00m\] \[\033[01;96m\]\W\[\033[00m\] \[\033[01;31m\]\$\[\033[00m\] "
+export PS1="\[\033[01;91m\]\h\[\033[00m\] \[\033[01;96m\]\w\[\033[00m\] \[\033[01;31m\]\$\[\033[00m\] "
 export PS2="\[\033[01;31m\] > \[\033[00m\]"
 
 ##
