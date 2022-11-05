@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+shopt -s nullglob globstar
+
+if [[ -n $DISPLAY ]]; then
+	dmenu=dmenu 
+else
+	echo "Error: No X11 display detected" >&2
+	exit 1
+fi
+
+prefix=${PASSWORD_STORE_DIR-~/.password-store}
+password_files=( "$prefix"/**/*.gpg )
+password_files=( "${password_files[@]#"$prefix"/}" )
+password_files=( "${password_files[@]%.gpg}" )
+
+password=$(printf '%s\n' "${password_files[@]}" | "$dmenu" -i -l 15 "$@")
+
+[[ -n $password ]] || exit
+
+pass show "$password" | { IFS= read -r pass; printf %s "$pass"; } | xclip -i
