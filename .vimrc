@@ -1,3 +1,38 @@
+call plug#begin('~/.vim/plugged')
+
+" NerdTree Plugin for Filebrowser
+
+Plug 'preservim/nerdtree'
+
+" Lightline Plugin for Statusbar
+Plug 'itchyny/lightline.vim'
+
+" Sonokai color scheme
+
+Plug 'sainnhe/sonokai'
+Plug 'tomasr/molokai'
+
+call plug#end()
+
+" NerdTree Plugin Settings
+
+map <C-o> :NERDTreeToggle<CR>
+
+let NERDTreeShowHidden=1
+
+"colorscheme sonokai
+colorscheme molokai
+
+" LightLine Plugin Settings
+" Set these settings to remove delay and remove vims mode display
+set ttimeoutlen=50
+set laststatus=2
+set noshowmode
+let g:lightline = {
+	 	\ 'colorscheme': 'molokai',
+	 	\ }
+
+set ts=4 sw=4
 set history=500
 filetype plugin on
 filetype indent on
