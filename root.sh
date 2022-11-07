@@ -1,3 +1,5 @@
 #!/bin/sh
 
-cp .bashrc /root/
+cp .bash* /root/
+mkdir -p /root/bin
+cp bin/pfetch /root/bin/
