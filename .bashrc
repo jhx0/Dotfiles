@@ -96,6 +96,7 @@ alias sl=ls
 alias mx='chmod u+x'
 alias lx='exa -la'
 alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
+alias v="vim"
 
 # git
 alias gits='git status'
