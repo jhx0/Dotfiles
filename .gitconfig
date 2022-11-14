@@ -1,9 +1,8 @@
 [user]
-    name = jhx
-    email = jhx0x00@gmail.com
-
+	name = jhx
+	email = jhx0x00@gmail.com
 [color]
-    ui = auto
-    interactive = auto
+	ui = auto
+	interactive = auto
 [core]
-    fileMode = false
+	filemode = false
