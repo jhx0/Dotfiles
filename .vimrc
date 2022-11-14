@@ -1,15 +1,12 @@
 call plug#begin('~/.vim/plugged')
 
 " NerdTree Plugin for Filebrowser
-
 Plug 'preservim/nerdtree'
 
 " Lightline Plugin for Statusbar
 Plug 'itchyny/lightline.vim'
 
-" Sonokai color scheme
-
-Plug 'sainnhe/sonokai'
+" Molokai color scheme
 Plug 'tomasr/molokai'
 
 call plug#end()
