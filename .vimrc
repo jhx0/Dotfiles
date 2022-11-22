@@ -17,6 +17,8 @@ map <C-o> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1
 
+set t_Co=256
+
 "colorscheme sonokai
 colorscheme molokai
 
