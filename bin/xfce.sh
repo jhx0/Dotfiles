@@ -19,6 +19,7 @@ xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/show-tray-icon -t bo
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>b" --create -t string -s "/home/x/bin/booky/booky -o"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>p" --create -t string -s "/home/x/bin/passmenu"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>Return" --create -t string -s "xfce4-terminal"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" --create -t string -s "dmenu_run -b"
 
 # Desktop settings
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -t bool -s false
