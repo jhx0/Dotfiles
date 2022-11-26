@@ -11,6 +11,11 @@ xterm*faceName: Monospace
 xterm*background: #000000
 xterm*foreground: #ffffff
 xterm*savelines: 16384
+xterm*scrollBar: false
+xterm*xftAntialias: true
+xterm*cursorColor: white
+xterm*locale: utf8
+xterm*utf8: true
 
 !!
 ! Molokai theme
