@@ -11,4 +11,7 @@ wget -q --show-progress $GO_BIN
 echo "[INFO] Unpacking Go"
 tar xzf go*.tar.gz
 
+echo "[INFO] Cleanup"
+rm -f $GO_VER
+
 echo "[OK] Done!"
