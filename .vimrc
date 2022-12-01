@@ -6,6 +6,12 @@ Plug 'preservim/nerdtree'
 " Lightline Plugin for Statusbar
 Plug 'itchyny/lightline.vim'
 
+" VIM DevIcons Plugin
+Plug 'ryanoasis/vim-devicons'
+
+" GitGutter Plugin
+Plug 'airblade/vim-gitgutter'
+
 " Molokai color scheme
 Plug 'tomasr/molokai'
 
