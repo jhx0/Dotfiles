@@ -6,3 +6,5 @@
 	interactive = auto
 [core]
 	filemode = false
+[pull]
+	ff = only
