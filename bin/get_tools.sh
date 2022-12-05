@@ -10,4 +10,9 @@ chmod +x booky/booky
 git clone https://github.com/rilysh/cafe.git
 chmod +x cafe/cafe
 
+git clone git@github.com:rilysh/cpuc.git
+
+git clone https://github.com/rilysh/bsdfetch-sh
+chmod +x bsdfetch-sh/bsdfetch
+
 echo "[OK] Done!"
