@@ -18,7 +18,6 @@ Plug 'tomasr/molokai'
 call plug#end()
 
 " NerdTree Plugin Settings
-
 map <C-o> :NERDTreeToggle<CR>
 
 let NERDTreeShowHidden=1
