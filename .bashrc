@@ -99,6 +99,7 @@ alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
 alias v="vim"
 alias ipp='curl -4 icanhazip.com'
 alias bookmarks='v ~/.bookmarks'
+alias g='git'
 
 # git
 alias gits='git status'
