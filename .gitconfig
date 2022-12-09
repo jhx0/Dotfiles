@@ -8,6 +8,7 @@
 	p = push
 	pl = pull
 	b = branch
+	d = diff
 [color]
 	ui = auto
 	interactive = auto
