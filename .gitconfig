@@ -1,6 +1,13 @@
 [user]
 	name = jhx
 	email = jhx0x00@gmail.com
+[alias]
+	a = add
+	c = commit
+	s = status
+	p = push
+	pl = pull
+	b = branch
 [color]
 	ui = auto
 	interactive = auto
