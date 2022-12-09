@@ -17,4 +17,6 @@ chmod +x bsdfetch-sh/bsdfetch
 
 git clone git@github.com:rilysh/whatip.git
 
+go install github.com/boyter/scc/v3@latest
+
 echo "[OK] Done!"
