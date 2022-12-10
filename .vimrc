@@ -12,6 +12,9 @@ Plug 'ryanoasis/vim-devicons'
 " GitGutter Plugin
 Plug 'airblade/vim-gitgutter'
 
+" CSS Color Plugin
+Plug 'ap/vim-css-color'
+
 " Molokai color scheme
 Plug 'tomasr/molokai'
 
