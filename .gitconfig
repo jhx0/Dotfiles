@@ -3,6 +3,7 @@
 	email = jhx0x00@gmail.com
 [alias]
 	a = add
+	cl = clone
 	c = commit
 	s = status
 	p = push
