@@ -56,7 +56,7 @@ set noswapfile
 set showmode
 set showcmd
 set lazyredraw
-set mouse=v
+set mouse=a
 set relativenumber
 set ttyfast
 set undolevels=999
