@@ -19,6 +19,6 @@ git clone git@github.com:rilysh/whatip.git
 
 go install github.com/boyter/scc/v3@latest
 
-git@github.com:cdemoulins/pamixer.git
+git clone git@github.com:cdemoulins/pamixer.git
 
 echo "[OK] Done!"
