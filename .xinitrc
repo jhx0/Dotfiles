@@ -18,4 +18,6 @@ xrdb -merge ~/.Xresources &
 
 # WM's/DE's
 # exec openbox-session
+# exec $HOME/bin/dwm
+# exec i3
 exec startxfce4
