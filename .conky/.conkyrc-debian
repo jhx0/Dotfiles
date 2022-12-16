@@ -62,6 +62,8 @@ IP-Adress: $alignr${addr br0}
 Up: $alignr${upspeed br0}
 Down: $alignr${downspeed br0}
 
+Public IP: $alignr${execi 3600 curl icanhazip.com}
+
 $hr
 
 ${color}CPU Usage:$alignr$color $cpu%
