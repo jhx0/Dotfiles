@@ -24,4 +24,7 @@ git clone git@github.com:cdemoulins/pamixer.git
 git clone git@github.com:anhsirk0/fetch-master-6000.git
 chmod +x fetch-master-6000/fm6000.pl
 
+git clone git@github.com:gentoo-btw/ramfetch.git
+chmod +x ramfetch/ramfetch
+
 echo "[OK] Done!"
