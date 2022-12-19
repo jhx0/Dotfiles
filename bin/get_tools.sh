@@ -27,4 +27,6 @@ chmod +x fetch-master-6000/fm6000.pl
 git clone git@github.com:gentoo-btw/ramfetch.git
 chmod +x ramfetch/ramfetch
 
+git clone https://gitlab.com/jallbrit/cbonsai.git
+
 echo "[OK] Done!"
