@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Debian specific
-sh /etc/X11/Xsession &
-
 setxkbmap -layout de -variant nodeadkeys &
 setxkbmap -option ctrl:nocaps &
 
