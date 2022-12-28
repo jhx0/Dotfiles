@@ -29,4 +29,6 @@ chmod +x ramfetch/ramfetch
 
 git clone https://gitlab.com/jallbrit/cbonsai.git
 
+cargo install --git=https://github.com/nate-sys/muc
+
 echo "[OK] Done!"
