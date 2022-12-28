@@ -40,6 +40,7 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth:erasedups
 
+# automatically cd into directory
 shopt -s autocd
 
 # correct cd typos
@@ -101,14 +102,5 @@ alias ipp='curl -4 icanhazip.com'
 alias bookmarks='v ~/.bookmarks'
 alias g='git'
 
-# git
-alias gits='git status'
-alias gitc='git commit -m'
-alias gitp='git push'
-alias gitpu='git pull'
-
 # print welcome message/fortune
 source $HOME/.bash_greetings
-
-# Rust
-source $HOME/.cargo/env
