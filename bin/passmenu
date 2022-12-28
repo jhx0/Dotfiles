@@ -9,6 +9,11 @@ else
 	exit 1
 fi
 
+# The path to the .password-store directory
+NAS_DIR="/mnt/nas/Important/Accounts/pass"
+
+export PASSWORD_STORE_DIR="${NAS_DIR}/.password-store"
+
 prefix=${PASSWORD_STORE_DIR-~/.password-store}
 password_files=( "$prefix"/**/*.gpg )
 password_files=( "${password_files[@]#"$prefix"/}" )
