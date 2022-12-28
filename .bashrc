@@ -102,5 +102,8 @@ alias ipp='curl -4 icanhazip.com'
 alias bookmarks='v ~/.bookmarks'
 alias g='git'
 
+# rust
+source $HOME/.cargo/env
+
 # print welcome message/fortune
 source $HOME/.bash_greetings
