@@ -109,3 +109,6 @@ alias gitpu='git pull'
 
 # print welcome message/fortune
 source $HOME/.bash_greetings
+
+# Rust
+source $HOME/.cargo/env
