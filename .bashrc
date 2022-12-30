@@ -102,8 +102,8 @@ alias ipp='curl -4 icanhazip.com'
 alias bookmarks='v ~/.bookmarks'
 alias g='git'
 
-# rust
-source $HOME/.cargo/env
+# password management
+alias pass="PASSWORD_STORE_DIR='/mnt/nas/Important/Accounts/pass/.password-store' pass"
 
 # print welcome message/fortune
 source $HOME/.bash_greetings
