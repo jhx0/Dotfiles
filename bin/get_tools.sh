@@ -31,4 +31,6 @@ git clone https://gitlab.com/jallbrit/cbonsai.git
 
 cargo install --git=https://github.com/nate-sys/muc
 
+cargo install lsd
+
 echo "[OK] Done!"
