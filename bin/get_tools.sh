@@ -33,4 +33,6 @@ cargo install --git=https://github.com/nate-sys/muc
 
 cargo install lsd
 
+git clone https://github.com/pipeseroni/pipes.sh.git
+
 echo "[OK] Done!"
