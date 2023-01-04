@@ -49,6 +49,7 @@ ${color}Uptime:$alignr$color $uptime_short
 ${color}RAM Usage:$alignr$color $mem / $memmax
 ${color}Swap Usage:$alignr$color $swap / $swapmax
 ${color}Processes:$alignr$color $processes
+${color}Loadavg:$alignr$color $loadavg
 
 $alignc${cpugraph cpu0 50,290 white white}
 
