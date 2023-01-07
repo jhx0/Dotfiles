@@ -105,8 +105,5 @@ alias g='git'
 # password management
 alias pass="PASSWORD_STORE_DIR='/mnt/nas/Important/Accounts/pass/.password-store' pass"
 
-# rust
-source $HOME/.cargo/env
-
 # print welcome message/fortune
 source $HOME/.bash_greetings
