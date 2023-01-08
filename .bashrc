@@ -4,7 +4,7 @@ case $- in
       *) return;;
 esac
 
-export PATH="$HOME/bin/go/bin:$HOME/bin:$HOME/scripts:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games"
+export PATH="$HOME/bin/go/bin:$HOME/.go/bin:$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games"
 
 umask 002
 
