@@ -29,10 +29,6 @@ chmod +x ramfetch/ramfetch
 
 git clone https://gitlab.com/jallbrit/cbonsai.git
 
-cargo install --git=https://github.com/nate-sys/muc
-
-cargo install lsd
-
 git clone https://github.com/pipeseroni/pipes.sh.git
 
 echo "[OK] Done!"
