@@ -22,6 +22,7 @@ call plug#end()
 
 " NerdTree Plugin Settings
 map <C-o> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeFocus<CR>
 
 let NERDTreeShowHidden=1
 
