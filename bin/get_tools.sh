@@ -34,4 +34,6 @@ git clone https://gitlab.com/jallbrit/cbonsai.git
 
 git clone https://github.com/pipeseroni/pipes.sh.git
 
+git clone https://github.com/kernelslacker/x86info.git
+
 echo "[OK] Done!"
