@@ -14,10 +14,11 @@ conky.config = {
     draw_shades = false,
     extra_newline = false,
     font = 'DejaVu Sans Mono:size=10',
-    gap_x = 20,
-    gap_y = 40,
+    gap_x = 30,
+    gap_y = 30,
     minimum_height = 5,
-    minimum_width = 200,
+    minimum_width = 300,
+	border_inner_margin = 15,
     net_avg_samples = 2,
     no_buffers = true,
     out_to_console = false,
@@ -29,7 +30,7 @@ conky.config = {
     own_window_type = 'normal',
     own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
     own_window_argb_visual = true,
-    own_window_argb_value = 0,
+    own_window_argb_value = 220,
     show_graph_range = false,
     show_graph_scale = false,
     stippled_borders = 0,
@@ -37,40 +38,41 @@ conky.config = {
     uppercase = false,
     use_spacer = 'none',
     use_xft = true,
+    color1 = '#ff5555',
 }
 
 conky.text = [[
-Host:$alignr${nodename}
-Kernel:$alignr ${kernel}
+Host:$alignr ${color1}${nodename}${color}
+Kernel:$alignr ${color1}${kernel}${color}
 
 $hr
 
-${color}Uptime:$alignr$color $uptime_short
-${color}RAM Usage:$alignr$color $mem / $memmax
-${color}Swap Usage:$alignr$color $swap / $swapmax
-${color}Processes:$alignr$color $processes
-${color}Loadavg:$alignr$color $loadavg
+${color}Uptime:$alignr ${color1}$uptime_short${color}
+${color}RAM Usage:$alignr ${color1}$mem${color} / ${color1}$memmax${color}
+${color}Swap Usage:$alignr ${color1}$swap${color} / ${color1}$swapmax${color}
+${color}Processes:$alignr ${color1}$processes${color}
+${color}Loadavg:$alignr ${color1}$loadavg${color}
 
-$alignc${cpugraph cpu0 50,290 white white}
-
-$hr
-
-/ $alignr${fs_used /} / ${fs_size /}
+${color}$alignc${cpugraph cpu0 50,290 white white}
 
 $hr
 
-IP-Adress: $alignr${addr br0}
-Up: $alignr${upspeed br0}
-Down: $alignr${downspeed br0}
-
-Public IP: $alignr${execi 3600 curl icanhazip.com}
+/ $alignr ${color1}${fs_used /}${color} / ${color1}${fs_size /}${color}
 
 $hr
 
-${color}CPU Usage:$alignr$color $cpu%
-${color}Frequency:$alignr$color${freq}MHz
+IP-Adress: $alignr ${color1}${addr br0}${color}
+Up: $alignr ${color1}${upspeed br0}${color}
+Down: $alignr ${color1}${downspeed br0}${color}
+
+Public IP: $alignr ${color1}${execi 3600 curl icanhazip.com}${color}
+
+$hr
+
+${color}CPU Usage:$alignr ${color1}$cpu${color} %
+${color}Frequency:$alignr ${color1}${freq}${color} MHz
 # Ryzen
-#CPU Temp: $alignr${execi 3 sensors | awk '/CPUTIN:/ {print $2}' | sed 's/+//g' | sed 's/°C//g'}
+#CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/CPUTIN:/ {print $2}' | sed 's/+//g' | sed 's/°C//g'}${color}
 # NUC
-CPU Temp: $alignr${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}
+CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}${color}
 ]]
