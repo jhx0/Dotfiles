@@ -15,7 +15,7 @@ conky.config = {
     extra_newline = false,
     font = 'DejaVu Sans Mono:size=10',
     gap_x = 30,
-    gap_y = 30,
+    gap_y = 60,
     minimum_height = 5,
     minimum_width = 300,
 	border_inner_margin = 15,
@@ -74,5 +74,5 @@ ${color}Frequency:$alignr ${color1}${freq}${color} MHz
 # Ryzen
 #CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/CPUTIN:/ {print $2}' | sed 's/+//g' | sed 's/°C//g'}${color}
 # NUC
-CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}${color}
+CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}${color} °C
 ]]
