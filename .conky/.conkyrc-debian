@@ -72,7 +72,7 @@ $hr
 ${color}CPU Usage:$alignr ${color1}$cpu${color} %
 ${color}Frequency:$alignr ${color1}${freq}${color} MHz
 # Ryzen
-#CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/CPUTIN:/ {print $2}' | sed 's/+//g' | sed 's/°C//g'}${color}
+#CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/CPUTIN:/ {print $2}' | sed 's/+//g' | sed 's/°C//g'}${color} °C
 # NUC
-CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}${color} °C
+#CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}${color} °C
 ]]
