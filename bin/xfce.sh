@@ -21,6 +21,7 @@ xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>p" --create
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>Return" --create -t string -s "xfce4-terminal"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" --create -t string -s "dmenu_run -b"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>l" --create -t string -s "/home/x/bin/lock/lock.sh"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>s" --create -t string -s "flameshot gui"
 
 # Desktop settings
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -t bool -s false
