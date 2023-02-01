@@ -36,4 +36,10 @@ git clone https://github.com/pipeseroni/pipes.sh.git
 
 git clone https://github.com/kernelslacker/x86info.git
 
+go install github.com/CondensedMilk7/countryfetch/cmd/countryfetch@latest
+
+git clone https://github.com/kiwimoe/dii.git
+
+https://github.com/stuartlangridge/magnus.git
+
 echo "[OK] Done!"
