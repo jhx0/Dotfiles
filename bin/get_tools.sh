@@ -40,6 +40,8 @@ go install github.com/CondensedMilk7/countryfetch/cmd/countryfetch@latest
 
 git clone https://github.com/kiwimoe/dii.git
 
-https://github.com/stuartlangridge/magnus.git
+git clone https://github.com/stuartlangridge/magnus.git
+
+git clone https://github.com/jhx0/net-utils.git
 
 echo "[OK] Done!"
