@@ -44,4 +44,6 @@ git clone https://github.com/stuartlangridge/magnus.git
 
 git clone https://github.com/jhx0/net-utils.git
 
+git clone https://github.com/TheDarkBug/uwufetch.git
+
 echo "[OK] Done!"
