@@ -46,4 +46,6 @@ git clone https://github.com/jhx0/net-utils.git
 
 git clone https://github.com/TheDarkBug/uwufetch.git
 
+git clone https://github.com/rilysh/reex.git
+
 echo "[OK] Done!"
