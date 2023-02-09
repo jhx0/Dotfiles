@@ -75,4 +75,12 @@ ${color}Frequency:$alignr ${color1}${freq}${color} MHz
 #CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/CPUTIN:/ {print $2}' | sed 's/+//g' | sed 's/°C//g'}${color} °C
 # NUC
 #CPU Temp: $alignr ${color1}${execi 3 sensors | awk '/Package id 0:/ {print $4}' | sed 's/+//g' | sed 's/°C//g'}${color} °C
+
+$hr
+
+${color}New York:$alignr ${color1}${execi 60 TZ="America/New_York" date "+%H:%M"}
+${color}Moscow:$alignr ${color1}${execi 60 TZ="Europe/Moscow" date "+%H:%M"}
+${color}Shanghai:$alignr ${color1}${execi 60 TZ="Asia/Shanghai" date "+%H:%M"}
+${color}Tokyo:$alignr ${color1}${execi 60 TZ="Asia/Tokyo" date "+%H:%M"}
+${color}Sydney:$alignr ${color1}${execi 60 TZ="Australia/Sydney" date "+%H:%M"}
 ]]
