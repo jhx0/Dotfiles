@@ -107,3 +107,12 @@ alias pass="PASSWORD_STORE_DIR='/mnt/nas/Important/Accounts/pass/.password-store
 
 # print welcome message/fortune
 source $HOME/.bash_greetings
+
+# functions
+function timezones() {
+	echo "`TZ='America/New_York' date \"+%H:%M\"` New York"
+	echo "`TZ='Europe/Moscow' date \"+%H:%M\"` Moscow"
+	echo "`TZ='sia/Shanghai' date \"+%H:%M\"` Shanghai"
+	echo "`TZ='Asia/Tokyo' date \"+%H:%M\"` Tokyo"
+	echo "`TZ='Australia/Sydney1' date \"+%H:%M\"` Sydney"
+}
