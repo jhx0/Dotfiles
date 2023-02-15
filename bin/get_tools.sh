@@ -48,4 +48,6 @@ git clone https://github.com/TheDarkBug/uwufetch.git
 
 git clone https://github.com/rilysh/reex.git
 
+git clone https://github.com/Duncaen/OpenDoas.git
+
 echo "[OK] Done!"
