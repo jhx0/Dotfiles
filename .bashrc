@@ -116,3 +116,7 @@ function timezones() {
 	echo "`TZ='Asia/Tokyo' date \"+%H:%M\"` Tokyo"
 	echo "`TZ='Australia/Sydney1' date \"+%H:%M\"` Sydney"
 }
+
+function show_nonfree() {
+	dpkg-query -W -f='${Section} ${Package}\n' | awk '/^non-free/ {print $2}'
+}
