@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GO_VER='go1.19.4.linux-amd64.tar.gz'
+GO_VER='go1.20.1.linux-amd64.tar.gz'
 GO_BIN="https://go.dev/dl/${GO_VER}"
 
 cd $HOME/bin
