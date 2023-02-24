@@ -50,4 +50,6 @@ git clone https://github.com/rilysh/reex.git
 
 git clone https://github.com/Duncaen/OpenDoas.git
 
+git clone https://github.com/ThatOneCalculator/NerdFetch.git
+
 echo "[OK] Done!"
