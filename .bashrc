@@ -112,7 +112,7 @@ source $HOME/.bash_greetings
 function timezones() {
 	echo "`TZ='America/New_York' date \"+%H:%M\"` New York"
 	echo "`TZ='Europe/Moscow' date \"+%H:%M\"` Moscow"
-	echo "`TZ='sia/Shanghai' date \"+%H:%M\"` Shanghai"
+	echo "`TZ='Asia/Shanghai' date \"+%H:%M\"` Shanghai"
 	echo "`TZ='Asia/Tokyo' date \"+%H:%M\"` Tokyo"
 	echo "`TZ='Australia/Sydney1' date \"+%H:%M\"` Sydney"
 }
