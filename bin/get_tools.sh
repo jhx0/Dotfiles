@@ -52,4 +52,6 @@ git clone https://github.com/Duncaen/OpenDoas.git
 
 git clone https://github.com/ThatOneCalculator/NerdFetch.git
 
+git clone https://github.com/rilysh/funmoji.git
+
 echo "[OK] Done!"
