@@ -1,8 +1,0 @@
-[Scheme]
-;Place in '~/.local/share/xfce4/terminal/colorschemes/'
-Name=Molokai
-TabActivityColor=#FF0044
-ColorCursor=#CCCCCC
-ColorForeground=#CCCCCC
-ColorBackground=#121212
-ColorPalette=#1B1D1E;#FF0044;#82B414;#FD971F;#266C98;#AC0CB1;#AE81FF;#CCCCCC;#808080;#F92672;#A6E22E;#E6DB74;#7070F0;#D63AE1;#66D9EF;#F8F8F2
