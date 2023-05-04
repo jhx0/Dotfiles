@@ -1,7 +1,0 @@
-set recolor-reverse-video true
-set page-padding 10
-
-map i recolor
-map r reload
-map R rotate
-map D toggle_page_mode
