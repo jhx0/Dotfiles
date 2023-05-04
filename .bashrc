@@ -4,7 +4,7 @@ case $- in
       *) return;;
 esac
 
-export PATH="$HOME/bin/go/bin:$HOME/bin:$HOME/scripts:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games"
+export PATH="$HOME/bin/go/bin:$HOME/.go/bin:$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games"
 
 umask 002
 
@@ -72,9 +72,9 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 fi
 
 if [ `id -u` == "0" ]; then
-	export PS1="(\[\033[01;31m\]root\[\033[00m\]) \[\033[01;91m\]\h\[\033[00m\] \[\033[01;96m\]\w\[\033[00m\] \[\033[01;31m\]\\$\[\033[00m\] "
+	export PS1="(\[\033[01;31m\]root\[\033[00m\]) \[\033[01;91m\][\[\033[00m\]\[\033[01;92m\]\h\[\033[00m\] \[\033[01;96m\]\w\[\033[00m\]\[\033[01;91m\]]\[\033[00m\] \[\033[01;31m\]\\$\[\033[00m\] "
 else
-	export PS1="\[\033[01;91m\]\h\[\033[00m\] \[\033[01;96m\]\w\[\033[00m\] \[\033[01;31m\]\\$\[\033[00m\] "
+   export PS1="\[\033[01;91m\][\[\033[00m\]\[\033[01;92m\]\h\[\033[00m\] \[\033[01;96m\]\w\[\033[00m\]\[\033[01;91m\]]\[\033[00m\] \[\033[01;31m\]\\$\[\033[00m\] "
 fi
 export PS2="\[\033[01;31m\] > \[\033[00m\]"
 
@@ -99,14 +99,25 @@ alias lx='exa -la'
 alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
 alias v="vim"
 alias ipp='curl -4 icanhazip.com'
-alias bookmarks='v ~/.bookmarks'
+alias bookmarks='v /mnt/nas/Bookmarks/.bookmarks'
 alias g='git'
+alias websrv='python3 -m http.server'
 
 # password management
 alias pass="PASSWORD_STORE_DIR='/mnt/nas/Important/Accounts/pass/.password-store' pass"
 
-# rust
-source $HOME/.cargo/env
-
 # print welcome message/fortune
 source $HOME/.bash_greetings
+
+# functions
+function timezones() {
+	echo "`TZ='America/New_York' date \"+%H:%M\"` New York"
+	echo "`TZ='Europe/Moscow' date \"+%H:%M\"` Moscow"
+	echo "`TZ='Asia/Shanghai' date \"+%H:%M\"` Shanghai"
+	echo "`TZ='Asia/Tokyo' date \"+%H:%M\"` Tokyo"
+	echo "`TZ='Australia/Sydney1' date \"+%H:%M\"` Sydney"
+}
+
+function show_nonfree() {
+	dpkg-query -W -f='${Section} ${Package}\n' | awk '/^non-free/ {print $2}'
+}
