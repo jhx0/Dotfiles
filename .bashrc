@@ -99,12 +99,8 @@ alias lx='exa -la'
 alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
 alias v="vim"
 alias ipp='curl -4 icanhazip.com'
-alias bookmarks='v /mnt/nas/Bookmarks/.bookmarks'
 alias g='git'
 alias websrv='python3 -m http.server'
-
-# password management
-alias pass="PASSWORD_STORE_DIR='/mnt/nas/Important/Accounts/pass/.password-store' pass"
 
 # print welcome message/fortune
 source $HOME/.bash_greetings
