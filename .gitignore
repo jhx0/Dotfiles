@@ -1,7 +1,1 @@
-src/st-0.8.5/config.h
-src/st-0.8.5/st
-src/st-0.8.5/st.o
-src/st-0.8.5/x.o
-.newsboat/cache.db
-.newsboat/history.cmdline
 .vim/plugged/
