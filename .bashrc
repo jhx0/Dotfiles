@@ -19,7 +19,7 @@ export VISUAL=vim
 export MANPAGER="less"
 export BROWSER=firefox
 export TZ='Europe/Berlin'
-export GREP_COLOR='1;31'
+export GREP_COLOR='mt=1;31'
 export GOPATH="$HOME/.go"
 export GOROOT="$HOME/bin/go"
 export LANG=en_US.UTF-8
