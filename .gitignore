@@ -1,1 +1,3 @@
 .vim/plugged/
+bin/go
+bin/hugo
