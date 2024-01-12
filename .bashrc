@@ -20,8 +20,6 @@ export MANPAGER="less"
 export BROWSER=firefox
 export TZ='Europe/Berlin'
 export GREP_COLOR='mt=1;31'
-export GOPATH="$HOME/.go"
-export GOROOT="$HOME/bin/go"
 export LANG=en_US.UTF-8
 export DOTFILES="~/Dotfiles"
 
@@ -57,7 +55,7 @@ HISTSIZE=
 HISTFILESIZE=
 
 # ignore this history entries
-HISTIGNORE="sl:ls:l:history:cd:lx"
+HISTIGNORE="sl:ll:ls:l:history:cd:lx"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -95,7 +93,8 @@ alias cp='cp -v'
 alias mv='mv -v'
 alias sl=ls
 alias mx='chmod u+x'
-alias lx='exa -la'
+alias lx='ls -la'
+alias ll='ls -lA'
 alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
 alias v="vim"
 alias ipp='curl -4 icanhazip.com'
@@ -111,7 +110,7 @@ function timezones() {
 	echo "`TZ='Europe/Moscow' date \"+%H:%M\"` Moscow"
 	echo "`TZ='Asia/Shanghai' date \"+%H:%M\"` Shanghai"
 	echo "`TZ='Asia/Tokyo' date \"+%H:%M\"` Tokyo"
-	echo "`TZ='Australia/Sydney1' date \"+%H:%M\"` Sydney"
+	echo "`TZ='Australia/Sydney' date \"+%H:%M\"` Sydney"
 }
 
 function show_nonfree() {
