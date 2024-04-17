@@ -3,5 +3,9 @@ pfetch
 echo
 
 fortune bofh-excuses
+echo
+echo "---"
+echo
+fortune debian-hints
 
 echo
