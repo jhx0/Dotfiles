@@ -17,6 +17,7 @@ xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/show-tray-icon -t bo
 
 # Keyboard shortcuts
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>Return" -t string -s "xfce4-terminal" --create
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" -t string -s "rofi -show combi" --create
 
 # Desktop settings
 xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -t bool -s false --create
@@ -29,8 +30,8 @@ xfconf-query -c xfce4-desktop -p /desktop-icons/show-tooltips -t bool -s false -
 xfconf-query -c xfce4-panel -p /panels/dark-mode -t bool -s false
 
 # Panel (Dock)
-xfconf-query -c xfce4-panel -p /panels/panel-2/position -s "p=7;x=0;y=0"
-xfconf-query -c xfce4-panel -p /panels/panel-2/mode -t int -s 1 --create
+xfconf-query -c xfce4-panel -p /panels/panel-2/position -s "p=10;x=0;y=0"
+xfconf-query -c xfce4-panel -p /panels/panel-2/mode -t int -s 0 --create
 xfconf-query -c xfce4-panel -p /panels/panel-2/size -t int -s 48
 xfconf-query -c xfce4-panel -p /panels/panel-2/autohide-behavior -t int -s 0
 
