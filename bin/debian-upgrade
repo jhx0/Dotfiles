@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "[INFO] Updating Debian"
+sudo apt update
+sudo apt upgrade -y
+echo
+
+echo "[INFO] Updating Flatpaks"
+sudo flatpak update
+echo
+
+echo "[INFO] Done."
