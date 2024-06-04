@@ -100,6 +100,7 @@ alias v="vim"
 alias ipp='curl -4 icanhazip.com'
 alias g='git'
 alias websrv='python3 -m http.server'
+alias cdd='cd ..'
 
 # print welcome message/fortune
 source $HOME/.bash_greetings
