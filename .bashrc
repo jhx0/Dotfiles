@@ -4,7 +4,7 @@ case $- in
       *) return;;
 esac
 
-export PATH="$HOME/.local/bin:$HOME/bin/go/bin:$HOME/.go/bin:$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games"
+export PATH="$HOME/.local/bin:$HOME/.local/bin/go/bin:$HOME/bin/go/bin:$HOME/.go/bin:$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/games"
 
 umask 002
 
@@ -22,6 +22,10 @@ export TZ='Europe/Berlin'
 export GREP_COLOR='mt=1;31'
 export LANG=en_US.UTF-8
 export DOTFILES="~/Dotfiles"
+
+# Golang
+export GOROOT="$HOME/.local/bin/go"
+export GOPATH="$HOME/.cache/go"
 
 # LESS man page colors (makes Man pages more readable).
 export LESS_TERMCAP_mb=$'\E[01;31m'
