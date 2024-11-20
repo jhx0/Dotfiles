@@ -80,34 +80,8 @@ else
 fi
 export PS2="\[\033[01;31m\] > \[\033[00m\]"
 
-##
-#  aliases
-##
-
-# general stuff
-#alias ls='ls --color=auto'
-alias ls='lsd'
-alias cat='batcat'
-alias l='lsd -lAh'
-alias rrc='source ~/.bashrc'
-alias grep='grep --color=auto'
-alias mkdir='mkdir -p'
-alias du='du -h'
-alias df='df -h'
-alias free='free -m'
-alias cp='cp -v'
-alias mv='mv -v'
-alias sl='lsd'
-alias mx='chmod u+x'
-alias lx='lsd -la'
-alias ll='lsd -lA'
-alias sysinfo='inxi -F'
-alias man2www="BROWSER='firefox %s; sleep 2' man -H $1"
-alias v="vim"
-alias ipp='curl -4 icanhazip.com'
-alias g='git'
-alias websrv='python3 -m http.server'
-alias cdd='cd ..'
+# source aliases
+source $HOME/.bash_aliases
 
 # print welcome message/fortune
 source $HOME/.bash_greetings
