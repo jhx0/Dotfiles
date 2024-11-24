@@ -16,12 +16,18 @@ set -o emacs  # Set Emacs mode
 export EDITOR=vim
 export PAGER=less
 export VISUAL=vim
-export MANPAGER="less"
 export BROWSER=firefox
 export TZ='Europe/Berlin'
 export GREP_COLOR='mt=1;31'
 export LANG=en_US.UTF-8
 export DOTFILES="~/Dotfiles"
+##
+# Man pager
+##
+# less
+#export MANPAGER="less"
+# Neovim
+export MANPAGER='nvim +Man!'
 
 # Golang
 export GOROOT="$HOME/.local/bin/go"
