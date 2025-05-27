@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PATH="/home/x/bin:/usr/bin:/usr/sbin:/bin:/sbin"
-YT_DL="$HOME/bin/yt-dlp"
+PATH="/home/x/.local/bin:/usr/bin:/usr/sbin:/bin:/sbin"
+YT_DL="$HOME/.local/bin/yt-dlp"
 
 time $YT_DL "$1"
