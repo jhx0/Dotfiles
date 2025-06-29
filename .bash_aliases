@@ -1,4 +1,5 @@
 alias cat='batcat'
+alias ls='ls --color=auto'
 alias l='ls -lAh'
 alias rrc='source ~/.bashrc'
 alias grep='grep --color=auto'
