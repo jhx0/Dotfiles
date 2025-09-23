@@ -6,6 +6,10 @@ fortune bofh-excuses
 echo
 echo "---"
 echo
-fortune debian-hints
+verse
+echo 
+echo "---"
+echo
+bp.sh
 
 echo

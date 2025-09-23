@@ -3,4 +3,4 @@
 PATH="/home/x/.local/bin:/usr/bin:/usr/sbin:/bin:/sbin"
 YT_DL="$HOME/.local/bin/yt-dlp"
 
-time $YT_DL "$1"
+time $YT_DL -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" $1 
