@@ -9,4 +9,8 @@ echo "[INFO] Updating Flatpaks"
 sudo flatpak update
 echo
 
+echo "[INFO] Removing unused Flatpaks"
+sudo flatpak uninstall --unused
+echo
+
 echo "[INFO] Done."
